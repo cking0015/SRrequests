@@ -8,8 +8,8 @@ from typing import Any, Dict, Iterable, List
 from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 
-USER_AGENT = "SRrequestsWeather/1.0 (contact@example.com)"
-POINTS_URL = "https://api.weather.gov/points/{lat},{lon}"
+USER_AGENT = "SRrequestsWeather/1.0 (cking0015@gmail.com.com)"
+POINTS_URL = "https://api.weather.gov/points/38.8805,-77.1097"
 
 def _request_json(url: str) -> Dict[str, Any]:
     """Perform a GET request and parse the JSON response."""
