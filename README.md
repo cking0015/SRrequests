@@ -15,3 +15,15 @@ The script will query the weather.gov API for the resolved latitude and longitud
 > **Note:** The National Weather Service requires requests to include a custom `User-Agent` header with contact information. Update the `USER_AGENT` constant in `weather_forecast.py` with your details before making repeated requests.
 
 > **Note:** Automatic location detection depends on the ipapi.co service, which enforces rate limits and may require a descriptive `User-Agent`. If you plan to rely on auto-detection heavily, review the provider's terms and configure the script's `USER_AGENT` accordingly.
+
+
+## Waste sorting app
+
+Run the Streamlit app:
+
+```bash
+pip install streamlit torch torchvision pillow
+streamlit run waste_sorting_app.py
+```
+
+Upload a picture and the app will suggest recycling, compost, or trash using a pre-trained ResNet18 image model and keyword-based waste rules.
